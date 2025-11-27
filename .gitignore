@@ -1,3 +1,9 @@
+# Dependencies
+node_modules
+
+# Build output - keep this commented out to commit dist folder for deployment
+# dist
+
 # Logs
 logs
 *.log
@@ -7,9 +13,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist-ssr
-*.local
+# Environment files
+.env
+.env.local
+.env.*.local
 
 # Editor directories and files
 .vscode/*
@@ -21,3 +28,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+Thumbs.db
+
+# OS
+.vercel
+
+# Misc
+dist-ssr
